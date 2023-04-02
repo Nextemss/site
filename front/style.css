@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0;
+}
+
+.container{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.chat{
+    width: 280px;
+    height: 700px;
+   
+    background-color: #743193;
+}
+
+.chat-item{
+    padding-top: 15px;
+}
+
+.chat-footer p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.6px;
+    line-height: 20px;
+    /* or 162% */
+
+    
+    width: 132px;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+hr{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.main-screen{
+    width: 100%;
+    background-color: #45125d;
+    
+}
+
+.casino{
+    display: flex;
+}
+
+
+/* !rulet window*/
+.rulet-window{
+    background-color: white;
+    width: 100%;
+}
+
+.first-screen{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.circle{
+    display: flex;
+    padding-right: 18px;
+}
+
+.first-screen-left{
+    display: flex;
+    align-items: center;
+    padding-right: 400px;
+}
+
+.circle img{
+    height: 17px;
+    width: 18.4px;
+}
+
+.first-screen-left h6{
+    padding-right: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10.56px;
+    line-height: 12px;
+    /* identical to box height, or 109% */
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.circle p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    /* or 100% */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.flex-first{
+    display: flex;
+}
+
+.first-screen-right{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10.56px;
+    line-height: 12px;
+    /* identical to box height, or 109% */
+
+
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+
+.balls{
+    display: flex;
+    padding-right: 380px;
+    
+}
+
+.balls img{
+    padding-right: 5px;
+}
+
+.coins{
+    display: flex;
+}
+.coins img{
+    padding-right: 10px;
+}
+
+
+.flex-second{
+    display: flex;
+    align-items: center;
+}
+
+.second-screen{
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.third-screen img{
+    width: 83%;
+    margin: 0 auto;
+}
+.third-screen{
+    padding-top: 30px;
+    display: flex;
+}
+
+
+.flex-fourth{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.switcher{
+    display: flex;
+    
+}
+
+.switcher hr{
+    margin: 0;
+    background: blue;
+    width: 1px;
+    height: 30px;
+    margin-left: 40px;
+}
+
+.switcher img{
+    padding-left: 8px;
+}
+
+.switcher p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    /* identical to box height, or 200% */
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #000000;
+
+    
+    padding-left: 10px;
+}
+
+.flex-fourth h5{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 28px;
+    /* identical to box height, or 233% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.roling-in h5{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 19.4px;
+    line-height: 31px;
+    /* identical to box height, or 158% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+    padding-right: 10px;
+}
+
+.roling-in h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18.4px;
+    line-height: 31px;
+    /* identical to box height, or 166% */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFE063;
+}
+
+.roling-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+.fifth-hr hr{
+    background-color: #743193;
+    height: 4px;
+    margin: 0 auto;
+    width: 82%;
+}
+
+.sixth-screen{
+   
+    height: 50px;
+    background-color: #743193;
+    width: 82%;
+    margin: 30px auto auto auto;
+}
+
+.mini-coin{
+    display: flex;
+    padding-left: 20px;
+}
+
+.sixth-screen h5{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 21px;
+    /* or 191% */
+
+    display: flex;
+    align-items: center;
+
+    color: #BCBEBF;
+    padding-left: 20px;
+}
+
+.mini-coin p{
+    color: white;
+    
+}
+
+.mini-conteiner{
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.flex-seventh{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-seventh img{
+    width: 21.3%;
+}
+
+
+
+.footer{
+    background-color: #743193;
+    width: 1400px;
+    height: 66px;
+    color: aliceblue;
+}
+ 
+.footer-bot{
+    background: #504a4a;
+    width: 1400px;
+    height: 150px;
+
+}

@@ -1,0 +1,126 @@
+body{
+    
+    background-image: url(168150-atmosfera-yabloko-purpur-fioletovyj-purpurnyj_cvet-3840x2160.jpg);
+       
+    overflow: hidden;
+    height: 100%;
+      }
+
+
+
+input{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 4px;
+    border-radius: 15px;
+
+}
+
+.butt{
+    margin-top: 15px;
+    width: 308px;
+    height: 50px; 
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+
+
+
+.but{
+    width: 308px;
+    height: 50px; 
+    margin-top: 4px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+
+
+.authorization{
+    margin-top: 10px;
+    border-radius: 15px;
+    width: 154px;
+    height: 25px; 
+    outline: none;
+}
+
+
+.conteiner{
+    width: 330px;
+    height: 250px;
+    box-shadow: 0px 0px 6px;
+    margin-right: -1500px;
+   
+}
+
+
+
+
+
+
+.buttonn{
+    margin-top: 100%;
+
+}
+
+
+
+.tex{
+    font-size: 320px;
+}
+
+input::-webkit-input-placeholder {
+    text-align: center;
+    }
+    
+    input:-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+    }
+    
+    input::-moz-placeholder { /* Firefox 19+ */
+    text-align: center;
+    }
+    
+    input:-ms-input-placeholder {
+    text-align: center;
+    }
+
+
+
+
+
+
+button {
+    margin-top: 5px;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+   }
+   
+   button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
