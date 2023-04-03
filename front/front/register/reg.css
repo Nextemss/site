@@ -1,0 +1,181 @@
+body{
+    
+    background-color: #5402b1;
+       
+    overflow: hidden;
+    height: 100%;
+      }
+
+
+
+input{
+    width: 400px;
+    height: 60px;
+    font-size: 20px;
+    margin-top: 4px;
+    border-radius: 15px;
+
+}
+
+.butt{
+    margin-top: 15px;
+    width: 308px;
+    height: 50px; 
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+
+
+
+.but{
+    width: 308px;
+    height: 50px; 
+    margin-top: 4px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+.conteiner{
+    width: 450px;
+    height: 605px;
+    box-shadow: 0px 0px 6px;
+    margin-right: -70%;
+    outline: 10px;
+    margin-top: 13%;
+    
+
+}
+
+
+.absolutle{
+    
+    margin-top: -20%;
+}
+
+
+
+
+.tex{
+    font-size: 320px;
+}
+
+
+.iinput{
+    margin-top: 40px;
+}
+
+
+
+
+input::-webkit-input-placeholder {
+    text-align: center;
+    }
+    
+    input:-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+    }
+    
+    input::-moz-placeholder { /* Firefox 19+ */
+    text-align: center;
+    }
+    
+    input:-ms-input-placeholder {
+    text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+.autorization{
+    margin-left: -60px;
+    margin-top: 30px;
+    position: absolute;
+    font-size: 25px;
+    color: #fff;
+}
+
+
+
+button {
+    width: 400px;
+    height: 60px;
+    margin-top: 40px;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #040405, #000000);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 25px;
+    padding: 0.6em 1.5em;
+   }
+   
+   button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #1e232466;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgba(29, 24, 23, 0);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
+
+
+
+
+
+
+
+
+
+
+
+.welcome{
+    font-size: 60px;
+}
+.con2{
+    width: 290px;
+    height: 300px;
+    margin-top: -40%;
+    margin-left: -60%;
+    box-shadow: 0px 0px 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
