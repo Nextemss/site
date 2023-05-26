@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="google" content="notranslate">
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/profile.css')}}">
+</head>
+<body>
+  <div class="avt">
+    <form id="photo-form" action="/avatar" method="POST" enctype="multipart/form-data">
+      <input type="file" id="photo-input" name="file" accept="image/*" onchange="handleFileSelect(event)">
+      <center><label for="photo-input" class="upload-label">Выберите фото</label></center>
+      <input type="submit" value="Upload" style="display: none;">
+    </form>
+  </div>
+      
+    <div class="cinteiner">
+
+    </div>
+    <div class="username"> {{ username }}</div>
+      <p class="date_of_birth">date of birth: {{ date_of_birth.strftime('%d-%m-%y') }}</p>
+      <div class="photo-upload-box">
+        <form id="photo-form" action="/avatar" method="POST" enctype="multipart/form-data">
+          <input type="file" id="photo-input" name="file" accept="image/*" onchange="handleFileSelect(event)">
+          <label for="photo-input" class="upload-label">Выберите фото</label>
+          <input type="submit" value="Upload" style="display: none;">
+        </form>
+        {% if user.photo_filename %}
+          <img src="{{ url_for('static', filename='avatar/' + user.photo_filename) }}" alt="Your Photo" class="avat" alt="User Avatar">
+        {% endif %} 
+      </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="scripts.js"></script>
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

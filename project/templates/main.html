@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevVault</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <meta name="google" content="notranslate">
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/main.css')}}">
+</head>
+<body>
+<div class="footer">
+    <div class="circle"></div>    <div class="add">
+        DV
+    </div>
+    <div class="namesite">
+    DevVault
+    </div>
+    <div>
+      {% if user.photo_filename %}
+      <img src="{{ url_for('static', filename='avatar/' + user.photo_filename) }}" alt="Your Photo" class="avat" alt="User Avatar">
+        {% endif %} 
+        <img class="photo" src="/static/photo/pngegg.png">
+
+
+        <div class="user-dropdown">
+          <div class="usn">{{ username }}</div>
+
+            <ul class="dropdown-menu">
+
+            </form>
+            <li>
+            <form method="POST" action="profile">
+
+              <center><button type="submit" class="profile">profile</button></center>
+
+            </form>
+          </li>
+              <li>
+              <form method="POST" action="logout">
+
+                <center><button type="submit" class="logout">Log Out</button></center>
+
+              </form>
+            </li>
+          </ul>
+        </div>
+ 
+
+
+
+
+
+        <div class="box"></div>
+    </div>
+
+    <div class="arrow_example_1"></div>
+    <div class="lable">
+        <input class="inputt" type="search" placeholder="Find friend">
+        
+    </div>
+</div>
+
+<div class="conteiner2">
+
+</div>
+<div class="filter">
+  <div class="group">
+    <input required="" type="text" class="input" id="name-input">
+    <span class="highlight"></span>
+    <span class="bar"></span>
+    <label>Name</label>
+  </div>
+</div>
+
+<div class="tow">
+  {% for file_name in file_names %}
+    <div class="towar" data-file-name="{{ file_name }}">
+      <center>
+        <p class="fm">
+          {% if file_name|length > 11 %}
+            {{ file_name[:11] + '...' }}
+          {% else %}
+            {{ file_name }}
+          {% endif %}
+        </p>
+      </center>
+      <button class="modal-button" id="callback-button">description</button>
+      <a href="{{ url_for('download_file', file_names=file_name) }}" class="download" download>Download</a>
+      
+    </div>
+    <div class="modal" id="modal-1">
+      <div class="modal__content">
+  
+        {discription}
+  
+      </div>
+    </div>
+  {% endfor %}
+
+
+  <br>
+  <br>  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+
+
+
+
+
+
+<div class="text" id="text_here"><center>{{ word }}</center></div>
+
+
+<button id="callback-button3" class="header__button3">
+  Add project
+</button>
+
+
+
+
+
+
+
+<div class="modal3" id="modal-3">
+  <div class="modal__content3">
+
+    
+      <div class="card2">
+          <div class="card-body">
+            
+              <form method="POST" action="/descriptions" enctype="multipart/form-data">
+
+
+
+                <textarea name="description" id="description" class="description" type="text" placeholder="description(not necessary)"></textarea>
+
+
+              
+                <button class="safe" name="safe" type="submit" value="Upload">safe</button>
+                
+                <p class="safe-info">the public and visible name will be the name of the file itself</p>
+              
+              <input type="file" class="custom-file-input" name="file">
+            </form>
+           
+        
+            
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="scripts.js"></script>
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
